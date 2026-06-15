@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="./images/building-5.webp">
+  <link rel="preload" as="image" href="./images/owner-suit-transparent.png">
 </head>
 <body>
   <div class="wrapper">
@@ -20,7 +22,7 @@
         <span class="header-value">28-IYUN</span>
       </div>
       <div class="header-logo">
-        <img src="./images/logo.png" alt="Mega House">
+        <img src="./images/logo.avif" alt="Mega House">
       </div>
       <div class="header-item header-item--right">
         <span class="header-label">Vaqti:</span>
@@ -33,9 +35,8 @@
 
     <!-- Main Title -->
     <h1 class="main-title">
-      G'IJDUVON SHAHRIDA
-      <span class="highlight">SOKIN DIYOR QURILISH</span>
-      KOMPANIYASIDAN XONADONLAR
+      G'IJDUVON SHAHRIDA XONADONLAR
+      <span class="highlight">ENDI BOSHLANG'ICH TO'LOVSIZ</span>
     </h1>
 
     <!-- About pill -->
@@ -65,8 +66,8 @@
       </ul>
 
       <div class="person">
-        <img src="./images/building-5.webp" alt="Building" class="building-img">
-        <img src="./images/owner-suit-transparent.png" alt="Mega House" class="person-img">
+        <img src="./images/building-5.webp" alt="Building" class="building-img" fetchpriority="high">
+        <img src="./images/owner-suit-transparent.png" alt="Mega House" class="person-img" fetchpriority="high">
       </div>
     </div>
 
