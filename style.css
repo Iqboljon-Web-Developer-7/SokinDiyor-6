@@ -64,19 +64,18 @@ body {
 }
 
 .header-logo {
-  background: linear-gradient(160deg, #b8882a 0%, #8a6010 100%);
-  border-radius: 0 0 20px 20px;
-  padding: 0px 16px 8px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 3px;
-  margin-top: -0px;
-  box-shadow: 0 6px 20px rgba(180, 130, 30, 0.5);
+  box-shadow: none;
 }
 
-.header-logo svg {
-  display: block;
+.header-logo img {
+  width: 40px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .header-logo span {
@@ -113,6 +112,8 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  letter-spacing: 2px;
+  filter: drop-shadow(0 1px 0px rgba(0,0,0,0.5)) drop-shadow(0 -1px 0px rgba(0,0,0,0.5)) drop-shadow(1px 0 0px rgba(0,0,0,0.5)) drop-shadow(-1px 0 0px rgba(0,0,0,0.5));
 }
 
 .main-title .highlight {
@@ -121,6 +122,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: none;
 }
 
 /* About pill */
