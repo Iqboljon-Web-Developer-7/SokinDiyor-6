@@ -226,9 +226,11 @@ body {
 
 .person-img {
   position: relative;
-  width: 100%;
+  width: 120%;
   height: auto;
   z-index: 2;
+  scale: 0.9;
+  translate: 40px 30px;
 }
 
 /* Countdown */
