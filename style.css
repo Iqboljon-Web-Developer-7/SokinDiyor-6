@@ -98,14 +98,14 @@ body {
 /* Main Title */
 .main-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(28px, 8.5vw, 36px);
+  font-size: clamp(21px, 6vw, 26px);
   font-weight: 900;
   text-align: center;
-  line-height: 1.08;
+  line-height: 1.1;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   padding: 0 22px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: linear-gradient(160deg, #111111 0%, #2a2a2a 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -130,6 +130,7 @@ body {
   font-weight: 900;
   letter-spacing: 1px;
   color: #0d0d0d;
+  margin-top: 24px;
   margin-bottom: 16px;
   margin-left: 22px;
 }
@@ -140,13 +141,13 @@ body {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  min-height: 310px;
+  min-height: 350px;
   padding-left: 10px;
 }
 
 .features-list {
   list-style: none;
-  width: 54%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -202,7 +203,7 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 54%;
+  width: 62%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -213,24 +214,24 @@ body {
   position: absolute;
   top: 2%;
   right: 0;
-  width: 117%;
-  height: 104%;
+  width: 118%;
+  height: 106%;
   object-fit: cover;
   object-position: center top;
   border-radius: 0;
   z-index: 1;
-  opacity: 0.45;
-  mask-image: radial-gradient(ellipse 80% 80% at 60% 40%, black 40%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 60% 40%, black 40%, transparent 75%);
+  opacity: 0.58;
+  mask-image: radial-gradient(ellipse 85% 85% at 60% 40%, black 45%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 60% 40%, black 45%, transparent 78%);
 }
 
 .person-img {
   position: relative;
-  width: 120%;
+  width: 118%;
   height: auto;
   z-index: 2;
-  scale: 0.9;
-  translate: 40px 30px;
+  scale: 1.05;
+  translate: 32px 36px;
 }
 
 /* Countdown */
