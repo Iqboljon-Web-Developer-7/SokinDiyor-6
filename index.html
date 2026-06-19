@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buxoro Shahridan Xonadonlar</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Self-hosted fonts (was render-blocking Google Fonts) -->
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/montserrat-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/oswald-latin.woff2" crossorigin>
+  <style>
+    @font-face{font-family:'Montserrat';font-style:normal;font-weight:100 900;font-display:swap;src:url('./fonts/montserrat-latin.woff2') format('woff2');}
+    @font-face{font-family:'Oswald';font-style:normal;font-weight:200 700;font-display:swap;src:url('./fonts/oswald-latin.woff2') format('woff2');}
+  </style>
   <link rel="stylesheet" href="style.css">
   <link rel="preload" as="image" href="./images/building-5.avif">
   <link rel="preload" as="image" href="./images/owner-2-transparent.avif">
@@ -61,7 +65,7 @@
     <div class="content-row">
       <div class="person">
         <img src="./images/building-5.avif" alt="Building" class="building-img" fetchpriority="high">
-        <img src="./images/owner-2-transparent.avif" alt="Mega House" class="person-img" fetchpriority="high">
+        <img src="./images/owner-2-transparent.avif" alt="Mega House" class="person-img" width="1000" height="1500" fetchpriority="high">
       </div>
     </div>
 
@@ -77,6 +81,6 @@
 
   </div>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
